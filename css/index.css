@@ -83,8 +83,9 @@
     padding-top: 5%;
     padding-right: 5%;
     padding-left: 5%;
-    height: 480px;
+    height: 60%;
     width: 30%;
+    padding-bottom: 5%;
     margin-bottom: 50px;
     letter-spacing: 1px;
 }
