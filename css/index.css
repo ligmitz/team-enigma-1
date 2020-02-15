@@ -48,7 +48,7 @@
 
 #nav a{
     text-decoration: none;
-    color: whitesmoke
+    color: whitesmoke;
 }
 
 
@@ -65,20 +65,50 @@
 }
 
 .content{
-    margin-top: 50px;
+    margin-top: 30px;
     margin-right: 5%;
     margin-left: 5%;
     line-height: 20px;
 }
 
-#home .heading{
-    font-size: 50px;
+#Introduction{
+    border-left: 1.5px solid #D2BBA0;
+    border-top: 1.5px solid #D2BBA0;
+    font-size: small;
+    background-color: rgba(230, 230, 240, 0.4);
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 20px;
+    text-align: justify;
+    line-height: 25px;
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    height: 480px;
+    width: 30%;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+#Introduction .heading{
+    text-align: center;
+    font-size: 35px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 
 @media only screen and (max-width:500px){
+    #Introduction .heading{
+        font-size: xx-large;
+    }
+    #Introduction{
+        padding-top: 35px;
+        font-size: small;
+        width: 80%;
+        height: 620px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
     .fimage{
         width: 100%;
         margin-top: 33px;
