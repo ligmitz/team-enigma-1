@@ -113,11 +113,25 @@ p{
     margin-bottom: 30px;
 }
 
+.usecase{
+    border-radius: 50%;
+    width: 50%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #5D737E;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 
 @media only screen and (max-width:500px){
     #Introduction .heading,#concept .heading, .heading{
         font-size: xx-large;
     }
+
+    .usecase{
+        width: 80%;
+    }
+
     #Introduction,#concept{
         padding-top: 35px;
         font-size: small;
