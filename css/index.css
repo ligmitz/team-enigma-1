@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    outline: none;
     justify-content: space-around;
     width: 100%;
     background-color: #c9a0dc;
@@ -69,13 +70,15 @@
     margin-right: 5%;
     margin-left: 5%;
     line-height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-#Introduction{
-    border-left: 1.5px solid #D2BBA0;
-    border-top: 1.5px solid #D2BBA0;
+#Introduction,#concept{
     font-size: small;
-    background-color: rgba(230, 230, 240, 0.4);
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-family: 'Montserrat', sans-serif;
     border-radius: 20px;
     text-align: justify;
@@ -83,14 +86,27 @@
     padding-top: 5%;
     padding-right: 5%;
     padding-left: 5%;
-    height: 60%;
     width: 30%;
     padding-bottom: 5%;
     margin-bottom: 50px;
     letter-spacing: 1px;
 }
 
-#Introduction .heading{
+.hr{
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 1px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+p{
+    margin-top: 15px;
+}
+
+#Introduction .heading,#concept .heading, .heading{
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 35px;
     font-weight: 500;
@@ -99,14 +115,13 @@
 
 
 @media only screen and (max-width:500px){
-    #Introduction .heading{
+    #Introduction .heading,#concept .heading, .heading{
         font-size: xx-large;
     }
-    #Introduction{
+    #Introduction,#concept{
         padding-top: 35px;
         font-size: small;
         width: 80%;
-        height: 85%;
         margin-left: 5%;
         margin-right: 5%;
     }
