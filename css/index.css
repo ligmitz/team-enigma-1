@@ -32,10 +32,10 @@
     display: flex;
     flex-direction: row;
     position: absolute;
-    right: 10%;
+    right: 15%;
 }
 
-#nav .nav-links .nav1,.nav2{
+#nav .nav-links .nav1,.nav2,.nav3,.burger{
     margin-right: 20px;
     letter-spacing: 1px;
 }
@@ -114,9 +114,9 @@ p{
 }
 
 .usecase{
-    border-radius: 50%;
+    border-radius: 50px;
     width: 50%;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 40px;
     border: 1px solid #5D737E;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -127,9 +127,36 @@ p{
     width: 15px;
 }
 
-@media only screen and (max-width:500px){
+.burger{
+    display: none;
+}
+
+.burger div{
+    height: 2.5px;
+    width: 25px;
+    background-color: whitesmoke;
+    margin: 5px;
+}
+
+@media only screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
     #Introduction .heading,#concept .heading, .heading{
         font-size: xx-large;
+    }
+
+    .burger{
+        margin-right: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    .burger div{
+        width: 15px;
+        height: 1.5px;
+        margin: 4px;
+        margin-top: 0px;
     }
 
     .usecase{
@@ -145,13 +172,53 @@ p{
     }
     .fimage{
         width: 100%;
-        margin-top: 33px;
+        margin-top: 38px;
     }
     #nav{
         padding-top: 8px;
-        padding-bottom: 5px;
+        padding-bottom: 10px;
     }
     #nav .nav-links{
         font-size: 10px;
     }
+
+    #nav .nav-links .top-head{
+        margin-top: 5px;
+        position: absolute;
+        left: 36%;
+        font-size: 2vh;
+    }
+
+    .burger{
+        display: block;
+        position: absolute;
+        right: 10vh;
+        margin-top: 5px;
+    }
+
+    #nav .nav-links .inner{
+        position: absolute;
+        margin-right: 0px;
+        right: 0px;
+        width: 50%;
+        height: 100vh;
+        top: 4.4vh;
+        background-color: #c9a0dc;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transform: translateX(100%);
+        translate: transform 0.5s ease-in;
+    }
+
+    .nav-links .nav1,.nav2,.nav3{
+        opacity: 0;
+    }
+
+
+}
+
+.active{
+    transform: translateX(0%);
 }
