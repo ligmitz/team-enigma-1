@@ -202,14 +202,14 @@ p{
         right: 0px;
         width: 50%;
         height: 100vh;
-        top: 4.4vh;
+        top: 4.5vh;
         background-color: #c9a0dc;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         transform: translateX(100%);
-        translate: transform 0.5s ease-in;
+        transition: tranform ease-in 0.5s;    
     }
 
     .nav-links .nav1,.nav2,.nav3{
@@ -217,8 +217,4 @@ p{
     }
 
 
-}
-
-.active{
-    transform: translateX(0%);
 }
