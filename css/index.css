@@ -290,16 +290,17 @@ p{
     .box2{
         justify-content: center;
         margin-top: 10%;
+        width: 80%;
     }
 
     .sub1,.sub2{
-        width: 100%;
+        width: 50%;
         margin-left: 10%;
         margin-right: 10%;
     }
 
     .sub1 img,.sub2 img{
-        width: 80%;
+        width: 10%;
     }
 
     .tag{
