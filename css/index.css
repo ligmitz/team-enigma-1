@@ -293,9 +293,13 @@ p{
     }
 
     .sub1,.sub2{
-        width: 80%;
+        width: 100%;
         margin-left: 10%;
         margin-right: 10%;
+    }
+
+    .sub1 img,.sub2 img{
+        width: 80%;
     }
 
     .tag{
