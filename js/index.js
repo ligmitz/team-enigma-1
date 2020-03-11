@@ -10,18 +10,22 @@ function navslide() {
         var nav2 = document.querySelector('.nav2');
         var nav3 = document.querySelector('.nav3');
         var nav4 = document.querySelector('.nav4');
+        var nav5 = document.querySelector('.nav5');
         if(slide.style.transform != "translateX(0%)"){
             slide.style.transform = "translateX(0%)";
             nav1.style.opacity = "1";
             nav2.style.opacity = "1";
             nav3.style.opacity = "1";
             nav4.style.opacity = "1";
+            nav5.style.opacity = "1";
+
         }else{
             slide.style.transform = "translateX(100%)";
             nav1.style.opacity = "0";
             nav2.style.opacity = "0";
             nav3.style.opacity = "0";
             nav4.style.opacity = "0";
+            nav5.style.opacity = "0";
         }
     })
   }
