@@ -233,6 +233,16 @@ p{
     letter-spacing: 1px;
 }
 
+.tech{
+    border: 3px solid #5D737E;
+    border-radius: 15px;
+    width: 22%;
+    height: 420px;
+    margin-top: 0px;
+    background: url("../resources/images/tech_img.jpeg");
+    background-size: cover;
+}
+
 @media only screen and (max-width:768px){
     body{
         overflow-x: hidden;
@@ -343,5 +353,10 @@ p{
     .container .box2{
         width: 100%;
         margin-top: 25px;
+    }
+
+    .tech{
+        width: 90%;
+        height: 290px;
     }
 }
